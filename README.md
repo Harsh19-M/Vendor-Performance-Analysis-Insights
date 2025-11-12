@@ -46,13 +46,12 @@ This project aims to:
 ---
 
 ## Approach Overview
-**Framework Used:** SMART & CRISP DM 
+**Framework Used:** SMART & CRISP-DM  
 *(Specific | Measurable | Achievable | Relevant | Time Bound)* & (Business Understanding | Data Understanding | Data Preparation | Analysis / Modeling | Evaluation | Deployment)
 
 ### **Base Table Selection – `purchase_prices` vs `purchases`**
-
-* Both tables had vendor details (`VendorNumber`, `Brand`, `PurchasePrice`), but `purchase_prices` also included key fields like `Price` and `Volume`.
-* Since all brands in `purchase_prices` appeared in `purchases`, we used `purchase_prices` as the **base table** to capture complete pricing details before joining with other tables for analysis.
+* Both tables contained vendor-level details (`VendorNumber`, `Brand`, `PurchasePrice`), but `purchase_prices` also had key fields like `Price`.
+* All brands in `purchase_prices` were present in `purchases`, so we selected `purchase_prices` as the **base table** to ensure complete pricing and volume information before joining with sales and vendor invoice tables for further analysis.
 
 ---
 
