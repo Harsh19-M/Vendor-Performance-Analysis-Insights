@@ -26,101 +26,20 @@ SELECT *
 FROM vendor_invoice
 LIMIT 5;
 
-
-/*Right so running these 6 basic queries above let us know the column headers/titles/names AND
-SOME quick things we can see/pick up on are:
-
-- That all the 4 tables purchase_prices, purchases, sales, vendor_invoice - 
-these 4 tables all have these 2 specific columns--> Vendor Number/No and Vendor Name - in them 
-BUT begin_inventory AND end_inventory tables DO NOT have these 2 columns - and 
-the whole project is about Vendor Performance Analysis so we might not keep use these 2 tables in our Analysis.
-
-AND 
-
-- All the Columns that are present in purchase_prices are also there in the purchases table - IDK about this NOW
+/*Right so running these 6 basic queries above let us know the column headers/titles/names AND SOME quick things we can see/pick up on are:
+- That all the 4 tables purchase_prices, purchases, sales, vendor_invoice 
+- These 4 tables all have these 2 specific columns--> Vendor Number/No and Vendor Name - in them BUT begin_inventory table AND end_inventory table DO NOT have these 2 columns 
+- and the whole project is about Vendor Performance Analysis so we might not keep use these 2 tables in our Analysis.
 */
 
-SELECT P."VendorName", P."VendorNumber", pp."Price", P."PurchasePrice", P."Dollars", P."Quantity", pp."Volume"
-FROM purchases AS P
-JOIN purchase_prices as pp ON pp."VendorName" = P."VendorName"
-LIMIT 5;
 
+//
 
-Select count(*)
-From purchases;
+/*Let's now look at each individual table - Lets just choose one single vendor - and see How the table - information - data has been stored for the VendorNumber/Name 
+(Otherwise the quereis would take way too much time to load especially the sales table which has 12.8 Million+ rows)
+- This should give us an idea of all other vendors too
 
-
-Select count(*)
-From sales;
-
-
-/*Let's now look at each individual table and gather basic insights*/
-/*Lets just choose one single vendor - and see How the table - information - data has been stored 
-- This should give us an idea of all other vendors too*/
-
-
-SELECT distinct P."VendorName", P."VendorNumber"
-FROM purchases as P
-JOIN purchase_prices as pp ON P."Brand" = pp."Brand"
-
-
-
-SELECT P."VendorName", P."VendorNumber", sum(S."SalesQuantity") as "Total Sales Qty"
-FROM purchases as P
-JOIN sales as S ON S."VendorNo" = P."VendorNumber"
-GROUP BY P."VendorName", P."VendorNumber"
-Order by "Total Sales Qty" desc
-LIMIT 50;
-
-
-
-CREATE TEMP TABLE vendor_sales_summary AS
-SELECT 
-    "VendorNo",
-    SUM("SalesQuantity") AS total_sales_qty
-FROM sales
-GROUP BY "VendorNo";
-
-
-SELECT 
-    P."VendorName",
-    P."VendorNumber",
-    V.total_sales_qty
-FROM vendor_sales_summary AS V
-JOIN purchases AS P
-    ON V."VendorNo" = P."VendorNumber"
-ORDER BY V.total_sales_qty DESC
-LIMIT 50;
-
-/*This ^^ here gave us like 50 rows of just our top vendor with the name, no, Qty 
-but we want top 50 distinct ones*/
-
-
-/*SO this is how (Limit 50): */
-
-SELECT DISTINCT P."VendorName",P."VendorNumber",V.total_sales_qty
-FROM vendor_sales_summary AS V
-JOIN (
-    SELECT DISTINCT "VendorNumber", "VendorName"
-    FROM purchases) AS P ON V."VendorNo" = P."VendorNumber"
-	
-ORDER BY V.total_sales_qty DESC
-LIMIT 50;
-
-
-/*(Limit 100) */
-SELECT DISTINCT P."VendorName",P."VendorNumber",V.total_sales_qty
-FROM vendor_sales_summary AS V
-JOIN (
-    SELECT DISTINCT "VendorNumber", "VendorName"
-    FROM purchases) AS P ON V."VendorNo" = P."VendorNumber"
-	
-ORDER BY V.total_sales_qty DESC
-LIMIT 100;
-
-
-
-/*Lets choose one single vendor and see how the information has been stored: 
+Lets choose one single vendor and see how the information has been stored: 
 For eg; We pick VendorNumber 4466
 */
 
@@ -138,13 +57,7 @@ select *
 from purchase_prices 
 where "VendorNumber" = 4466;
 
-/*
-purchase_prices → reference table (defines valid price per brand)
-
-purchases → transactional table (each purchase event)
-
-When you merge them once, you can safely keep using purchases after that, 
-since it now carries everything you need.*/
+/*purchase_prices → reference table (defines valid price per brand) BUT purchases → transactional table (each purchase event)*/
 
 select *
 from vendor_invoice
@@ -167,15 +80,12 @@ group by "Brand", "PurchasePrice";
 select *
 from vendor_invoice
 where "VendorNumber" = 4466;
-
-/*So there's a column called PONumber - Purchase Order Number (Most likely)*/
+/*So there's a column called "PONumber" - Purchase Order Number */
 
 select count(distinct "PONumber") as "Count of Distinct PONumber", count("PONumber") as "Total PONumber"
 from vendor_invoice 
 where "VendorNumber" = 4466;
-
-/*Result: 55 - So we can confirm there ar*/
-
+/*Result: 55 - So we can confirm */
 
 
 select table_schema, table_name, column_name
@@ -218,7 +128,6 @@ order by "VendorNumber" asc;
 
 
 
-
 /* We will Join the purchases table and the purchase_prices table joining on Brand */
 
 select P."VendorNumber", P."VendorName", P."Brand", P."PurchasePrice", pp."Volume", 
@@ -231,7 +140,7 @@ group by P."VendorNumber", P."VendorName", P."Brand", P."PurchasePrice", pp."Vol
 order by "Total_Purchase_in_Dollars" asc;
 
 /*So for some reason there was a value where the Purchase_Price, Actual Price, Total_Purchase_in_Dollars are 0 
-like how are all three values = 0 BUT Total_Purchase_Qty is more than 0 --> 2015 - How and why are Quantities sold
+like how are all three values = 0 BUT Total_Purchase_Qty is 2015 - How and why are Quantities sold
 but price are all 0? So clearly incorrect input or misleading values - so we must filter them out*/
 
 /* NEW Filtered out where Purchase price more than 0 */
@@ -245,7 +154,6 @@ join purchases as P on pp."Brand" = P."Brand"
 where P."PurchasePrice" > 0
 group by P."VendorNumber", P."VendorName", P."Brand", P."PurchasePrice", pp."Volume", pp."Price"
 order by "Total_Purchase_in_Dollars" asc;
-
 
 
 
@@ -271,28 +179,16 @@ Used `purchase_prices` as the base table since it contained all key pricing fiel
 
 /* SO lets perform a join on purchase_prices table, sales table and vendor_invoice table*/
 
-
-select *
-from purchase_prices 
-limit 5;
-
-select * 
-from sales 
-limit 5;
-
-select *
-from vendor_invoice
-limit 5;
-
-
-
-select pp."VendorNumber", pp."Brand", pp."PurchasePrice", pp."Price", sum(S."SalesQuantity"), 
-sum(S."SalesDollars"), sum(S."SalesPrice"), sum(S."ExciseTax")
+select pp."VendorNumber", pp."Brand", pp."PurchasePrice", pp."Price", 
+sum(S."SalesQuantity") as "Total_Sales_Qty", sum(S."SalesDollars") as "Total_Sales_Dollars", 
+sum(S."SalesPrice") as "Total_Sales_Price", sum(S."ExciseTax") as "Total_Excise_Tax",
+sum(Vi."Quantity") as "Total_Purchase_Quantity", sum(Vi."Dollars") as "Total_Purchase_Dollars", 
+sum(Vi."Freight") as "Total_Freight_Cost"
 
 from purchase_prices as pp
 join sales as S on S."VendorNo" = pp."VendorNumber" and S."Brand" = pp."Brand"
 join vendor_invoice as Vi on pp."VendorNumber" = Vi."VendorNumber"
-limit 15
+group by pp."VendorNumber", pp."Brand", pp."PurchasePrice", pp."Price";
 
 /*So initially we Tried to just simply join all 3 of these tables we created above BUT 
 that did not run due to much of Memory Usage - SO we made use of CTEs(With - As) */
