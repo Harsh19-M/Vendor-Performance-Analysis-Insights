@@ -16,7 +16,7 @@ End-to-end **Vendor Performance Analysis** project using **SQL** (data explorati
 
 
 **Live Dashboard:** [View Power BI Report](your-link-here)  
-**Executive Deck:** [View Google Slides](your-link-here)  
+**Executive Deck:** [View Google Slides]([your-link-here](https://docs.google.com/presentation/d/1h2wTZSiAYNN2xwqsaU1r2wTdwOEzAcLZYS8ufUnIp0g/edit?slide=id.g3a024b19907_2_96#slide=id.g3a024b19907_2_96))  
 **Full Case Study Below ↓**
 
 
