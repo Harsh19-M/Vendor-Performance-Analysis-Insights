@@ -4,10 +4,11 @@ End-to-end **Vendor Performance Analysis** project using **SQL** (data explorati
 ---
 
 ## Key Highlights
-- Built a complete **data analytics pipeline**: SQL → Python → Power BI  
-- Designed an **interactive Vendor Performance Dashboard** to track cost, margin, and efficiency  
-- Identified **underperforming vendors & brands** and uncovered **profitability gaps** across suppliers  
-- Delivered **data-backed recommendations** for better pricing and vendor negotiations  
+- Built a complete **end-to-end data analytics pipeline**: connected and queried PostgreSQL tables → cleaned, aggregated, and analyzed data in Python → visualized and modeled insights in Power BI for actionable business decisions.  
+- Designed an **interactive Vendor Performance Dashboard** to track cost, margin, sales, and operational efficiency.  
+- Identified **underperforming vendors & brands** and uncovered **profitability gaps** across suppliers, enabling targeted interventions.  
+- Delivered **data-backed recommendations** for pricing optimization, vendor negotiations, and inventory management.  
+- Applied structured **project planning frameworks**: **SMART** goals for objectives and **CRISP-DM** methodology for step-by-step data analysis, from business understanding → data preparation → modeling → evaluation → deployment.  
 
 ---
 
@@ -17,7 +18,7 @@ End-to-end **Vendor Performance Analysis** project using **SQL** (data explorati
 ---
 
 📊 **Live Dashboard:** [View Power BI Report](your-link-here)  
-🎯 **Executive Deck:** [View Google Slides](https://docs.google.com/presentation/d/1e68ZcCHOzPbsdyf8bYjK0_WDwdPrHvC-m7F55FYTLYE/present)  
+🎯 **Executive Deck:** [View Google Slides](your-link-here)  
 📘 **Full Case Study Below ↓**
 
 ---
@@ -37,10 +38,10 @@ This project aims to:
 
 ---
 
-## Key Challenges
-1. **Vendor Performance Gaps** – Lack of visibility into vendor-level profitability and contribution.  
-2. **Inventory Inefficiency** – Slow-moving stock and poor turnover increasing holding costs.  
-3. **Fragmented Data Sources** – Purchase, sales, and pricing data stored across multiple tables, requiring extensive cleaning and joining.  
+## ⚙️ Key Challenges
+1. **Vendor Performance Gaps** – Lack of visibility into vendor-level profitability and contribution; hard to see which vendors are actually making good profit.  
+2. **Fragmented Data Sources** – Purchase, sales, and pricing data are spread across multiple tables, requiring cleaning and joining.  
+3. **Cost Variability** – Unclear if bulk purchasing actually reduces unit costs, making cost efficiency hard to assess.
 
 ---
 
