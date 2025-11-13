@@ -50,7 +50,7 @@ This project aims to:
 ---
 
 ## Approach Overview
-**Framework Used:** SMART & CRISP-DM  
+### **Framework Used:** SMART & CRISP-DM  
 *(Specific | Measurable | Achievable | Relevant | Time Bound)* & (Business Understanding | Data Understanding | Data Preparation | Analysis / Modeling | Evaluation | Deployment)
 
 ### **Initial Approach – Joining `purchase_prices`, `sales`, `vendor_invoice`**
