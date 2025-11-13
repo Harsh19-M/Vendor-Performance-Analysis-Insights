@@ -53,11 +53,11 @@ This project aims to:
 ### **Project-Planning (Framework Used):** SMART & CRISP-DM  
 *(Specific | Measurable | Achievable | Relevant | Time Bound)* & (Business Understanding | Data Understanding | Data Preparation | Analysis / Modeling | Evaluation | Deployment)
 
-### **Initial Approach – Joining `purchase_prices`, `sales`, `vendor_invoice`**
+### **Initial Approach: Joining `purchase_prices`, `sales`, `vendor_invoice`**
 - Selected **`purchase_prices`** as the base table to capture all key pricing and volume fields (`Price`, `Volume`, `PurchasePrice`) for each vendor-brand.  
 - Attempted to join all three tables directly, but **millions of rows** (especially from `sales` with 12.8+ million rows) caused severe performance issues.
 
-### **Aggregated Table Creation – `vendor_sales_summary`**
+### **Aggregated Table Creation: `vendor_sales_summary`**
 - Created **`FreightSummary`**, **`PurchaseSummary`**, and **`SalesSummary`** using **CTEs (Common Table Expressions)** to pre-aggregate data, drastically reducing row count.  
 - Built **`vendor_sales_summary`** by joining the CTEs on `VendorNumber` and `Brand`, combining freight, purchase, and sales metrics per vendor-brand.  
 - Pulled **`vendor_sales_summary`** into **Python via SQLAlchemy + Pandas** for downstream cleaning, EDA, and visualization in VSCode.
