@@ -76,6 +76,12 @@ This project aims to:
 - **Verified data quality**: ensured no duplicates, checked for negative values, and reviewed descriptive statistics (`df.describe().T`).  
 - **Loaded cleaned table back to PostgreSQL**: created `vendor_sales_summary_clean_addedcols` and stored using `df.to_sql(..., if_exists='replace', index=False)` for downstream EDA, visualization, and dashboarding.
 
+### **EDA & Research**
+
+**Data Quality Check:**
+During the Profit Margin analysis, a small number of extreme negative outliers were identified (e.g., values below -20,000%). These outliers are most likely caused by returns, manual adjustments, or data entry errors in the source system. Since they represent a very small fraction of the total records and do not materially change the overall trends, vendor rankings, or strategic insights, they were retained for transparency and flagged as data anomalies. In a real business setting, these entries would be forwarded to the finance/operations team for validation, but they do not affect the conclusions of this analysis.
+
+
 ---
 
 ## Key Insights
