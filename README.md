@@ -77,6 +77,53 @@ This project aims to:
 - **Loaded cleaned table back to PostgreSQL**: created `vendor_sales_summary_clean_addedcols` and stored using `df.to_sql(..., if_exists='replace', index=False)` for downstream EDA, visualization, and dashboarding.
 
 
+### **EDA/Research & Analytical Testing**
+### **1. Total Sales by Vendor**
+
+#### **1️ Brief Explanation**
+We grouped total sales by vendor to identify which suppliers generate the highest revenue.  
+This highlights key revenue drivers and potential concentration risk.
+
+#### **2️ Code Used**
+```python```
+df["Total_Sales_in_Dollars"].describe()
+
+top_sales = (
+    df.groupby("VendorName")["Total_Sales_in_Dollars"].sum().nlargest(20)
+)
+top_sales.plot(kind="barh", figsize=(10, 6))
+plt.gca().invert_yaxis()
+plt.title("Vendor Sales Total by VendorName")
+plt.xlabel("Sales in $")
+plt.ylabel("Vendor Name")
+plt.show()
+
+#### **3️ Output Summary**
+
+- **Median vendor-brand sales:** \$5,298  
+- **75th percentile:** \$28,396  
+- **Max single entry:** \$5.1M  
+
+**Top Vendors by Total Sales ($):**
+- **DIAGEO NORTH AMERICA INC — \$68.7M**  
+- **MARTIGNETTI COMPANIES — \$41.0M**  
+- **PERNOD RICARD USA — \$32.3M**  
+- **JIM BEAM BRANDS COMPANY — \$31.9M**  
+- **BACARDI USA INC — \$25.0M**  
+*(full list in bar chart)*
+
+---
+
+#### **Quick Insight**
+A small group of vendors accounts for the majority of total sales, showing strong revenue concentration.
+
+---
+
+---
+
+
+## Key Insights
+
 ### **EDA Findings: Key Insights & Recommendations**
 
 1. **Total Sales Distribution Across Vendors**
@@ -171,9 +218,7 @@ During Profit Margin analysis, a small set of extreme negative outliers (e.g., <
 - Prioritize long-term partnerships with consistently high-GP vendors.
 - Investigate occasional extreme losses for certain brands/products to prevent repeated impact on gross profit.
 
----
 
-## Key Insights
 ## Business Impact
 | **Metric** | **Before** | **After** |
 |-------------|-------------|------------|
