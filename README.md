@@ -51,7 +51,7 @@ This project aims to:
 
 ## Approach Overview
 ### **Project-Planning (Framework Used):** SMART & CRISP-DM  
-*(Specific | Measurable | Achievable | Relevant | Time Bound)* & (Business Understanding | Data Understanding | Data Preparation | Analysis / Modeling | Evaluation | Deployment)
+*(Specific | Measurable | Achievable | Relevant | Time Bound)* & (Business Understanding | Data Understanding | Data Preparation |<br>Analysis/Modeling | Evaluation | Deployment)
 
 ### **Initial Approach – Joining `purchase_prices`, `sales`, `vendor_invoice`**
 - Selected **`purchase_prices`** as the base table to capture all key pricing and volume fields (`Price`, `Volume`, `PurchasePrice`) for each vendor-brand.  
