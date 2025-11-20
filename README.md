@@ -103,17 +103,17 @@ plt.show()
 ```
 
 #### **Output Summary**
-- **Median vendor sales:** \$160K 
-- **75th percentile:** \$2.53M 
-- **Mean vendor sales:** \$3.52M
-- **Max vendor sales:** \$68.7M (DIAGEO NORTH AMERICA INC)
+- **Median vendor sales: $160K**
+- **75th percentile: $2.53M**
+- **Mean vendor sales: $3.52M**
+- **Max vendor sales: $68.7M (DIAGEO NORTH AMERICA INC)**
 
 **Top Vendors by Total Sales ($):**
-- **DIAGEO NORTH AMERICA INC — \$68.7M**  
-- **MARTIGNETTI COMPANIES — \$41.0M**  
-- **PERNOD RICARD USA — \$32.3M**  
-- **JIM BEAM BRANDS COMPANY — \$31.9M**  
-- **BACARDI USA INC — \$25.0M**  
+- **DIAGEO NORTH AMERICA INC — $68.7M**  
+- **MARTIGNETTI COMPANIES — $41.0M**  
+- **PERNOD RICARD USA — $32.3M**  
+- **JIM BEAM BRANDS COMPANY — $31.9M**  
+- **BACARDI USA INC — $25.0M**  
 *(full list in full Plot/Chart)*
 </details>
 
@@ -142,11 +142,11 @@ plt.show()
 ```
 
 #### **Output Summary (Vendor-Level)**
-- **Count of vendors:** \128
-- **Median vendor GP:** \$33,923
-- **75th percentile:** \$780,128
-- **Max vendor GP:** \$17.78M
-- **Min vendor GP:** –$9,194 (loss-making vendor)
+- **Count of vendors: 128**
+- **Median vendor GP: $33,923**
+- **75th percentile: $780,128**
+- **Max vendor GP: $17.78M**
+- **Min vendor GP: –$9,194 (loss-making vendor)**
 
 **Top Vendors by Total Gross Profit ($)**
 - **DIAGEO NORTH AMERICA INC — \$17.78M**  
@@ -298,7 +298,8 @@ df["Total_Purchase_Quantity"].describe()
 df["Unit_Cost"].describe()
 ```
 
-#### **Output Summary - Total Purchase Quantity:**
+#### **Output Summary**
+**Total Purchase Quantity:**
 - **Count: 10,692**
 - **Mean: 3,141 units**
 - **Median: 262 units** 
