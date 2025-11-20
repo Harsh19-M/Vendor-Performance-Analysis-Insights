@@ -416,7 +416,7 @@ Insight: Some high-sales vendors show large profit variability, highlighting pot
 
 ### **EDA Findings: Key Insights & Recommendations**
 
-1. **Total Sales Distribution Across Vendors**
+### **1. Total Sales Distribution Across Vendors**
 
 **Insights**
 - A few vendors contribute a disproportionately large share of total sales, indicating strong revenue concentration.  
@@ -429,7 +429,7 @@ Insight: Some high-sales vendors show large profit variability, highlighting pot
 - Explore promotional strategies to expand share for underrepresented vendors.
 
 
-2. **Gross Profit Contribution by Vendor**
+### **2. Gross Profit Contribution by Vendor**
 
 **Insights**
 - Gross profit is concentrated among top vendors that also lead in total sales volume.  
@@ -442,7 +442,7 @@ Insight: Some high-sales vendors show large profit variability, highlighting pot
 - Promote historically strong GP brands to maximize margin contribution.
 
 
-3. **Profit Margin Distribution**
+### **3. Profit Margin Distribution**
 
 **Insights**
 - Most vendors operate within a healthy positive margin range (0–40%).  
@@ -454,7 +454,7 @@ Insight: Some high-sales vendors show large profit variability, highlighting pot
 - Work with mid-margin vendors on negotiation, freight optimization, and pricing refinement.  
 - Flag extreme negative margin cases for Finance/Operations validation and upstream correction.
 
-4. **Stock Turnover by Vendor**
+### **4. Stock Turnover by Vendor**
 
 **Insights**
 - Most vendors have a stock turnover between 0.8–2.0, indicating normal inventory movement.
@@ -467,7 +467,7 @@ Insight: Some high-sales vendors show large profit variability, highlighting pot
 - Adjust purchase planning and warehouse allocation based on turnover trends.
 
 
-5. **Unit Cost vs. Purchase Quantity**
+### **5. Unit Cost vs. Purchase Quantity**
 
 **Insights**
 - Unit costs vary widely, with some very high-cost purchases and many lower-cost bulk purchases.
@@ -479,7 +479,7 @@ Insight: Some high-sales vendors show large profit variability, highlighting pot
 - Use unit cost insights to inform inventory and vendor negotiations.
 
 
-6. **Sales-to-Purchase Ratio**
+### **6. Sales-to-Purchase Ratio**
 
 **Insights**
 - Most vendors sell 1–3 times their purchase quantity, indicating typical resale rates.
@@ -492,7 +492,7 @@ Insight: Some high-sales vendors show large profit variability, highlighting pot
 - Track sales-to-purchase trends for vendor performance benchmarking.
 
 
-7. **Gross Profit Variability – Top 15 Vendors**
+### **7. Gross Profit Variability – Top 15 Vendors**
 
 **Insights**
 - Top vendors generate the majority of total sales, but gross profit varies significantly across brands/products.
