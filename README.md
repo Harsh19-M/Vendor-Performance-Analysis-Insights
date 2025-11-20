@@ -77,6 +77,9 @@ This project aims to:
 - **Loaded cleaned table back to PostgreSQL**: created `vendor_sales_summary_clean_addedcols` and stored using `df.to_sql(..., if_exists='replace', index=False)` for downstream EDA, visualization, and dashboarding.
 
 ### **EDA/Research & Analytical Testing**
+
+<details> <summary><b>7 Key EDA (Brief/Code/Output Summary) & Analytical Testings (Click to Expand)</b></summary>
+
 ### **1. Total Sales by Vendor**
 
 #### **Brief Explanation**
