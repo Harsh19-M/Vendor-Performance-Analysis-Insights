@@ -71,7 +71,7 @@ This project aims to:
 - **Created calculated columns**:
   - `Gross_Profit = Total_Sales_in_Dollars – Total_Purchase_in_Dollars`  
   - `Profit_Margin = Gross_Profit / Total_Sales_in_Dollars` (handled division by 0)  
-  - `Stock_Turnover = Total_Sales_Quantity / Total_Purchase_Quantity`  
+  - `Stock_Turnover = Total_Sales_Quantity / Total_Purchase_Quantity`   
   - `Sales_to_Purchase_Ratio = Total_Sales_in_Dollars / Total_Purchase_in_Dollars`  
 - **Verified data quality**: ensured no duplicates, checked for negative values, and reviewed descriptive statistics (`df.describe().T`).  
 - **Loaded cleaned table back to PostgreSQL**: created `vendor_sales_summary_clean_addedcols` and stored using `df.to_sql(..., if_exists='replace', index=False)` for downstream EDA, visualization, and dashboarding.
