@@ -76,15 +76,14 @@ This project aims to:
 - **Verified data quality**: ensured no duplicates, checked for negative values, and reviewed descriptive statistics (`df.describe().T`).  
 - **Loaded cleaned table back to PostgreSQL**: created `vendor_sales_summary_clean_addedcols` and stored using `df.to_sql(..., if_exists='replace', index=False)` for downstream EDA, visualization, and dashboarding.
 
-
 ### **EDA/Research & Analytical Testing**
 ### **1. Total Sales by Vendor**
 
-#### **1️ Brief Explanation**
+#### **Brief Explanation**
 We grouped total sales by vendor to identify which suppliers generate the highest revenue.  
 This highlights key revenue drivers and potential concentration risk.
 
-#### **2️ Code Used**
+#### **Code Used**
 ```python```
 df["Total_Sales_in_Dollars"].describe()
 
@@ -98,7 +97,7 @@ plt.xlabel("Sales in $")
 plt.ylabel("Vendor Name")
 plt.show()
 
-#### **3️ Output Summary**
+#### **Output Summary**
 
 - **Median vendor-brand sales:** \$5,298  
 - **75th percentile:** \$28,396  
