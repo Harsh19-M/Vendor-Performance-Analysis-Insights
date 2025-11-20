@@ -115,7 +115,7 @@ plt.show()
 - **JIM BEAM BRANDS COMPANY — $31.9M**  
 - **BACARDI USA INC — $25.0M**  
 *(full list in full Plot/Chart)*
-</details>
+</details> 
 
 ### **2. Total Gross Profit by Vendor**
 
