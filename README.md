@@ -78,14 +78,14 @@ This project aims to:
 
 ### **EDA/Research & Analytical Testing**
 
-<details> <summary><b>7 Key EDA (Brief/Code/Output Summary) & Analytical Testings (Click to Expand)</b></summary>
-
 ### **1. Total Sales by Vendor**
 
 #### **Brief Explanation**
 Grouped total sales by vendor to identify which suppliers generate the highest revenue.  
 This highlights key revenue drivers and potential concentration risk.
 
+<details> <summary><b> Key EDA: Code & Output Summary  (Click to Expand)</b></summary>
+ 
 #### **Code Used in ```Python```**
 ```
 # Vendor-level statistical summary
@@ -108,7 +108,6 @@ plt.show()
 - **Mean vendor sales:** \$3.52M
 - **Max vendor sales:** \$68.7M (DIAGEO NORTH AMERICA INC)
 
-
 **Top Vendors by Total Sales ($):**
 - **DIAGEO NORTH AMERICA INC — \$68.7M**  
 - **MARTIGNETTI COMPANIES — \$41.0M**  
@@ -116,13 +115,15 @@ plt.show()
 - **JIM BEAM BRANDS COMPANY — \$31.9M**  
 - **BACARDI USA INC — \$25.0M**  
 *(full list in full Plot/Chart)*
-
+</details>
 
 ### **2. Total Gross Profit by Vendor**
 
 #### **Brief Explanation**
 Aggregated *Gross Profit* at the **vendor level** to understand which suppliers drive the most profitability.  
 This highlights high-margin partners and flags low- or negative-profit vendors for further review.
+
+<details> <summary><b> Key EDA: Code & Output Summary (Click to Expand)</b></summary>
 
 #### **Code Used in `Python`**
 ```
@@ -154,6 +155,7 @@ plt.show()
 - **PERNOD RICARD USA — \$8.15M**  
 - **JIM BEAM BRANDS COMPANY — \$7.69M**  
 *(full list in full Plot/Chart)*
+</details>
 
 
 ### **3. Profit Margin by Vendor**
@@ -161,6 +163,8 @@ plt.show()
 #### **Brief Explanation**
 Analyzed vendor-level profit margins to identify high-margin suppliers and detect extreme losses or negative margins.
 This helps flag both top-performing and underperforming vendors for operational or pricing review.
+
+<details> <summary><b> Key EDA: Code & Output Summary (Click to Expand)</b></summary>
 
 #### **Code Used in `Python`**
 ```
@@ -208,13 +212,15 @@ During Profit Margin analysis, a small set of extreme negative outliers (e.g., <
 - **DIAGEO CHATEAU ESTATE WINES — -906.60%**  
 - **M S WALKER INC — -143.24%**  
 *(full list in full Plot/Chart)*
-
+</details>
 
 ### **4. Stock Turnover by Vendor**
 
 #### **Brief Explanation**
 Calculated the average stock turnover per vendor to identify which suppliers move inventory fastest.
 Highlights potential supply chain bottlenecks or overstock risks
+
+<details> <summary><b> Key EDA: Code & Output Summary (Click to Expand)</b></summary>
 
 #### **Code Used in `Python`**
 ```
@@ -264,6 +270,7 @@ plt.show()
 - **VINEYARD BRANDS LLC — 0.26**  
 - **HIGHLAND WINE MERCHANTS LLC — 0.30**  
 *(full list in full Plot/Chart)*
+</details>
 
 
 ### **5. Unit Cost vs Purchase Quantity**
@@ -272,6 +279,7 @@ plt.show()
 Calculated unit cost per item to analyze pricing trends relative to purchase quantity.
 Helps identify bulk-purchase efficiencies or anomalies in unit pricing.
 
+<details> <summary><b> Key EDA: Code & Output Summary (Click to Expand)</b></summary>
 
 #### **Code Used in `Python`**
 ```
@@ -312,6 +320,7 @@ df["Unit_Cost"].describe()
 - Most purchases are moderate quantity (<2,000 units) with unit costs clustered under $20.
 -Outliers exist with extremely high unit cost or very large purchase quantities.
 - Scatter plot highlights bulk-purchase efficiency and potential anomalies.
+</details>
 
 
 ### **6. Sales-to-Purchase Ratio by Vendor**
@@ -319,6 +328,8 @@ df["Unit_Cost"].describe()
 #### **Brief Explanation**
 Calculated the average sales-to-purchase ratio per vendor to evaluate efficiency in converting purchases into sales.
 This identifies top-performing vendors and potential underperformers
+
+<details> <summary><b> Key EDA: Code & Output Summary (Click to Expand)</b></summary>
 
 #### **Code Used in `Python`**
 ```
@@ -367,6 +378,7 @@ plt.show()
 - **VINEYARD BRANDS LLC — 0.38**  
 - **BLACK COVE BEVERAGES — 0.43**  
 *(full list in full Plot/Chart)*
+</details>
 
 
 ### **7. Profit Variability for Top Vendors (Top 15 by Sales)**
@@ -374,6 +386,8 @@ plt.show()
 #### **Brief Explanation**
 Selected the top 15 vendors by total sales and analyzed their gross profit distribution.
 This highlights variability and risk across major revenue-generating suppliers.
+
+<details> <summary><b> Key EDA: Code & Output Summary (Click to Expand)</b></summary>
 
 #### **Code Used in `Python`**
 ```
@@ -407,8 +421,8 @@ Gross profit variability: wide range across top vendors (boxplot shows min, max,
 Insight: Some high-sales vendors show large profit variability, highlighting potential volatility or inconsistent margins
 
 (Full boxplot visually shows variability across all top 15 vendors)
-
 </details>
+
 
 ---
 
