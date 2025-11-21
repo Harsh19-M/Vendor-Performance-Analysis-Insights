@@ -76,7 +76,7 @@ This project aims to:
 - **Verified data quality**: ensured no duplicates, checked for negative values, and reviewed descriptive statistics (`df.describe().T`).  
 - **Loaded cleaned table back to PostgreSQL**: created `vendor_sales_summary_clean_addedcols` and stored using `df.to_sql(..., if_exists='replace', index=False)` for downstream EDA, visualization, and dashboarding.
 
-### **EDA/Research & Analytical Testing**
+### **EDA/Research**
 
 ### **1. Total Sales by Vendor**
 
@@ -423,6 +423,34 @@ Insight: Some high-sales vendors show large profit variability, highlighting pot
 
 (Full boxplot visually shows variability across all top 15 vendors)
 </details>
+
+
+## **Analytical Testing**
+
+### **Test #2 — Correlation Between Vendor Sales & Profit (Summary)**
+
+**Objective:**
+Evaluate whether vendors who generate higher **total sales** also contribute higher **gross profit**, helping identify if revenue and profitability move together across the Vendor portfolio.
+
+**Approach:**
+
+* Calculated **Total Sales** and **Total Gross Profit** per vendor.
+* Built a correlation matrix using these aggregated fields.
+* Reviewed the strength and direction of the relationship.
+
+**Key Finding:**
+
+* The correlation between **Total Sales** and **Total Gross Profit** is extremely strong:
+  **r = 0.9907**
+* This indicates an almost perfectly **positive linear relationship** — vendors who sell more nearly always generate more gross profit.
+
+**Implication:**
+
+* High-revenue vendors are consistently your high-profit vendors.
+* This means future vendor evaluation models can safely treat revenue as a strong proxy for profitability — helpful for rankings, forecasting, or prioritizing strategic vendor relationships.
+
+**Conclusion:**
+Test #2 confirms that **Sales ↔ Profit** in this dataset move together very tightly. Vendor performance decisions can rely on this pattern with high confidence.
 
 ---
 
