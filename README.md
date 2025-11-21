@@ -456,7 +456,7 @@ Both metrics agree: the effect exists **slightly**, but it's **not strong**.
 * Bulk-buying **might** save money, but only for specific vendors/products.
 * To get real insights, you need **vendor-level and category-level breakdowns** to identify where volume-based pricing actually applies.
 
-### **Conclusion:**
+**Conclusion:**
 Bulk purchasing offers **possible**, but not guaranteed, cost benefits. The dataset shows a **weak** correlation, suggesting that buying more doesn’t always lead to better unit pricing.
 
 
@@ -482,7 +482,7 @@ Evaluate whether vendors who generate higher **total sales** also contribute hig
 * High-revenue vendors are consistently your high-profit vendors.
 * This means future vendor evaluation models can safely treat revenue as a strong proxy for profitability — helpful for rankings, forecasting, or prioritizing strategic vendor relationships.
 
-### **Conclusion:**
+**Conclusion:**
 Test #2 confirms that **Sales ↔ Profit** in this dataset move together very tightly. Vendor performance decisions can rely on this pattern with high confidence.
 
 ---
