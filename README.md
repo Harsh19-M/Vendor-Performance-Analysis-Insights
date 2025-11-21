@@ -427,6 +427,39 @@ Insight: Some high-sales vendors show large profit variability, highlighting pot
 
 ## **Analytical Testing**
 
+### **Test #1 — Does Bulk Purchasing Reduce Unit Cost? (Summary)**
+
+**Objective:**
+Check whether buying larger quantities leads to **lower unit cost**, i.e., whether bulk purchasing behavior actually results in cost advantages.
+
+**Approach:**
+
+* Compared `Total_Purchase_Quantity` vs `Unit_Cost`.
+* Calculated both **Pearson** (linear relationship) and **Spearman** (monotonic relationship) correlations.
+* Evaluated whether higher purchase quantities consistently correspond to lower unit costs.
+
+**Key Findings:**
+
+* **Pearson = –0.038** → *Almost no linear relationship.*
+* **Spearman = –0.274** → *Weak downward trend.*
+
+Both metrics agree: the effect exists **slightly**, but it's **not strong**.
+
+**Interpretation:**
+
+* Bulk purchases **sometimes** result in lower unit costs, but **not reliably**.
+* Discounts, vendor pricing rules, and product categories vary too much for a consistent pattern.
+* The trend is visible but **weak**, and not strong enough to form a general rule across the dataset.
+
+**Implication:**
+
+* Bulk-buying **might** save money, but only for specific vendors/products.
+* To get real insights, you need **vendor-level and category-level breakdowns** to identify where volume-based pricing actually applies.
+
+**Conclusion:**
+Bulk purchasing offers **possible**, but not guaranteed, cost benefits. The dataset shows a **weak** correlation, suggesting that buying more doesn’t always lead to better unit pricing.
+
+
 ### **Test #2 — Correlation Between Vendor Sales & Profit (Summary)**
 
 **Objective:**
