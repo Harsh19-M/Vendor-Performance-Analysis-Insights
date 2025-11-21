@@ -498,11 +498,14 @@ Find brands that are dragging overall performance so the business can take actio
 
 **Findings:**
 
-* Brands with **Profit_Z < -1** or **Sales_Z < -1** are considered underperforming.
-* Example from the dataset:
+Only 2 brands in the dataset met the underperforming criteria.
+Both had profit significantly below average (Z < –1).
+Sales for these brands were slightly below average but not extreme (Z ~ –0.13).
 
-  * Brand 2277 → low profit (Profit_Z = -1.39), sales not too low
-  * Brand 4785 → low profit (Profit_Z = -1.09), sales not too low
+* Brands with **Profit_Z < -1** or **Sales_Z < -1** are considered underperforming.
+* From the dataset:
+  * Brand 2277 - Kilbeggan Irish Whiskey (Brand 2277) → low profit (Profit_Z = -1.39), sales not too low (Sales_Z = -0.131460)
+  * Brand 4785 - Remy Martin XO Excellence (Brand 4785) → low profit (Profit_Z = -1.09), sales not too low (Sales_Z = -0.125717)
 
 **Business Implication:**
 
