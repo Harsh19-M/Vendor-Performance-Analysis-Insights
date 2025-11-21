@@ -427,7 +427,7 @@ Insight: Some high-sales vendors show large profit variability, highlighting pot
 
 ## **Analytical Testing**
 
-### **Test #1 — Does Bulk Purchasing Reduce Unit Cost? (Summary)**
+### **Test #1: Does Bulk Purchasing Reduce Unit Cost? (Summary)**
 
 **Objective:**
 Check whether buying larger quantities leads to **lower unit cost**, i.e., whether bulk purchasing behavior actually results in cost advantages.
@@ -460,7 +460,7 @@ Both metrics agree: the effect exists **slightly**, but it's **not strong**.
 Bulk purchasing offers **possible**, but not guaranteed, cost benefits. The dataset shows a **weak** correlation, suggesting that buying more doesn’t always lead to better unit pricing.
 
 
-### **Test #2 — Correlation Between Vendor Sales & Profit (Summary)**
+### **Test #2: Correlation Between Vendor Sales & Profit (Summary)**
 
 **Objective:**
 Evaluate whether vendors who generate higher **total sales** also contribute higher **gross profit**, helping identify if revenue and profitability move together across the Vendor portfolio.
