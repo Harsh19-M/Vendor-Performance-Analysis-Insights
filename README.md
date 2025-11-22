@@ -515,6 +515,41 @@ Sales for these brands were slightly below average but not extreme (Z ~ –0.13)
 **Verdict:**
 Successfully identified all underperforming brands based on sales and profit.
 
+
+### **Test #4: Vendor SKU Performance Segments**
+
+**Objective:**
+Assess how vendors’ SKUs are distributed across **performance segments** — i.e., which SKUs are High Turnover/High Profit, Low Turnover/High Profit, or Low Turnover/Low Profit. This helps identify where value is concentrated and which vendors dominate the SKU count.
+
+**Approach:**
+
+* Used the `Performance_Segment` table aggregated by vendor.
+* Counted SKUs for each segment:
+
+  * **High Turnover / High Profit** – fast-selling profitable SKUs
+  * **Low Turnover / High Profit** – slow-moving profitable SKUs
+  * **Low Turnover / Low Profit** – slow-moving low-profit SKUs
+* Compared totals across vendors to understand distribution patterns.
+
+**Key Findings:**
+
+* Top vendors dominate SKU counts:
+
+  * `MARTIGNETTI COMPANIES`, `PERFECTA WINES`, `ULTRA BEVERAGE`, `M S WALKER`, and `PINE STATE TRADING CO` account for **~40% of all SKUs**.
+* **Low Turnover / High Profit SKUs** are the largest segment for most vendors (~60–70% of their SKUs).
+* **High Turnover / High Profit SKUs** are limited, even for top vendors. Only a few have >100 SKUs in this category.
+* **Low Turnover / Low Profit SKUs** are present but minor, generally <50 SKUs per vendor.
+
+**Business Implication:**
+
+* Focus on expanding **High Turnover / High Profit SKUs** to drive revenue growth.
+* Maintain or optimize **Low Turnover / High Profit SKUs**, since they form the bulk of the portfolio.
+* Consider **reducing Low Turnover / Low Profit SKUs** to free up inventory resources or improve efficiency.
+* Vendor management should prioritize top SKU contributors for strategic planning, inventory decisions, and promotions.
+
+**Verdict:**
+The dataset shows a **clear concentration of value in certain vendors and SKU segments**. This segmentation provides actionable insight for prioritizing inventory, negotiating with vendors, and identifying growth opportunities.
+
 ---
 
 ## Key Insights
