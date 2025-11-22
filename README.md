@@ -568,13 +568,14 @@ Test #4 provides a **clear performance segmentation** of SKUs. It highlights whi
 
 ---
 
-## Business Impact
-| **Metric** | **Before** | **After** |
-|-------------|-------------|------------|
-| Data Quality | Inconsistent & duplicated | Cleaned & standardized dataset |
-| Reporting Process | Manual Excel (4–6 hrs/week) | Automated Power BI Dashboard |
-| Sales Visibility | Regional only | Company-wide performance overview |
-| Decision-Making | Reactive | Proactive & data-driven |
+## Business Impact| **Metric**                | **Before**                                                        | **After**                                                                             |
+| ------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Data Quality              | Fragmented, inconsistent, and unvalidated                         | Cleaned, standardized, and enriched dataset in `vendor_sales_summary_clean_addedcols` |
+| Reporting Process         | Manual table joins, Excel summaries                               | Automated PostgreSQL → Python → Power BI workflow with dashboards                     |
+| Sales & Profit Visibility | Hard to identify top-performing or underperforming vendors/brands | Clear, interactive company-wide vendor & SKU performance view                         |
+| Decision-Making           | Reactive; intuition-driven                                        | Proactive, data-backed decisions on vendor negotiations, inventory, and pricing       |
+| Inventory Optimization    | Blind spots in turnover & SKU performance                         | Identified star SKUs, slow movers, and underperforming brands for strategic action    |
+| Cost Efficiency           | Bulk purchase impact unclear                                      | Verified bulk purchase effect, unit cost trends, and profitability gaps               |
 
 ---
 
