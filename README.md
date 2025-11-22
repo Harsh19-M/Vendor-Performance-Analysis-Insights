@@ -137,7 +137,7 @@ top_VENs_byGP.plot(kind="barh", figsize=(10, 6))
 plt.gca().invert_yaxis()
 plt.title("Top Vendors by Total Gross Profit")
 plt.xlabel("Gross Profit ($)")
-plt.ylabel("Vendor Name")
+plt.ylabel("Vendor Name") 
 plt.show()
 ```
 
