@@ -558,8 +558,6 @@ Test #4 provides a **clear performance segmentation** of SKUs. It highlights whi
 ---
 
 ## Key Insights
-
-### **Key Insights & Findings:**
 - **Bulk Purchasing ≠ Guaranteed Savings:** Weak correlation between purchase quantity and unit cost; volume discounts exist, but only for select vendors/products.
 - **High Sales → High Profit:** Vendors with high total sales consistently generate high gross profit (r = 0.99); revenue can be used as a reliable proxy for vendor profitability.
 - **Underperforming Brands Identified:** 2 brands flagged for low profit despite moderate sales; candidates for promotions, pricing adjustments, or vendor renegotiation.
