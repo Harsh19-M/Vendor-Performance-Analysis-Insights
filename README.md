@@ -595,6 +595,12 @@ Test #4 provides a **clear performance segmentation** of SKUs. It highlights whi
 ---
 
 ## Key Outcomes
+- Created a single source of truth for vendor & SKU performance across sales, profit, turnover, and purchase data.
+- Built a Power BI dashboard enabling real-time visibility of vendor profitability, inventory efficiency, and sales-to-purchase ratios.
+- Identified high-performing vendors and star SKUs to prioritize strategic partnerships and promotions.
+- Flagged underperforming vendors and brands for pricing review, promotions, or potential delisting.
+= Delivered data-backed recommendations to improve inventory planning, vendor negotiations, and cost efficiency.
+
 ---
 
 ## Deliverables
