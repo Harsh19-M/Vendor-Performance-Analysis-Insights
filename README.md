@@ -5,10 +5,7 @@ End-to-end **Vendor Performance Analysis** project using **SQL** (data explorati
 ## Key Highlights
 - Built a complete **end-to-end data analytics pipeline**: connected and queried PostgreSQL tables – cleaned, aggregated, and analyzed data in Python – visualized and modeled insights in Power BI for actionable business decisions.
 - Aggregated massive datasets **(millions of rows)** from `vendor_invoice`, `purchases`, and `sales` table **(12.8+ million rows)** into a single **`vendor_sales_summary`** table of **10,692 rows** using **CTEs (Common Table Expressions)** to pre-aggregate freight, purchase, and sales metrics per vendor-brand, enabling faster, actionable analysis.
-- Performed EDA & Analytical Testing → bulk buys ≈ small cost benefit, high-sales vendors = high profit, identified underperforming brands for action, and segmented SKUs to reveal star vs slow-moving products for strategic inventory decisions.
-- Bulk Buying ≠ Guaranteed Savings: Bulk purchases show weak cost benefits; discounts depend on vendor/product.
-- Sales Drive Profit: Vendors with high sales almost always generate high gross profit — revenue is a reliable profitability proxy.
-- Targeted SKU & Brand Actions: Identified underperforming brands and segmented SKUs (High/Low Turnover × High/Low Profit) to prioritize inventory, promotions, and strategic vendor decisions.
+- Performed EDA & Analytical Testing → Bulk Buying ≠ Guaranteed Savings(weak Correlation), high-sales vendors = generate high profit, identified underperforming brands for action, and segmented SKUs(Stock keeping unit) to reveal star vs slow-moving products for strategic inventory decisions.
 - Applied structured **project planning frameworks**: **SMART** goals for objectives and **CRISP-DM** methodology for step-by-step data analysis, from business understanding → data preparation → modeling → evaluation → deployment.  
 - Designed an **interactive Vendor Performance Dashboard** to track cost, margin, sales, and operational efficiency.  
 - Identified **underperforming vendors & brands** and uncovered **profitability gaps** across suppliers, enabling targeted interventions.  
@@ -563,98 +560,13 @@ Test #4 provides a **clear performance segmentation** of SKUs. It highlights whi
 ## Key Insights
 
 ### **Key Insights & Findings:**
-
-<details> <summary><b> EDA Findings: Key Insights & Recommendations (Click to Expand)</b></summary>
-
-### **1. Total Sales Distribution Across Vendors**
-
-**Insights**
-- A few vendors contribute a disproportionately large share of total sales, indicating strong revenue concentration.  
-- Sales distribution is highly uneven, with long-tail vendors contributing minimal volume.  
-- The business is exposed to concentration risk if major vendors face supply or operational disruptions.
-
-**Recommendations**
-- Strengthen negotiation leverage and strategic relationships with high-volume vendors.  
-- Assess mid-tier vendors for growth potential to diversify revenue sources.  
-- Explore promotional strategies to expand share for underrepresented vendors.
-
-
-### **2. Gross Profit Contribution by Vendor**
-
-**Insights**
-- Gross profit is concentrated among top vendors that also lead in total sales volume.  
-- High-performing vendors demonstrate consistent profitability across multiple brands.  
-- Lower-tier vendors show minimal profitability due to low volume or suboptimal pricing.
-
-**Recommendations**
-- Prioritize high-GP vendors for joint planning, improved terms, and long-term business agreements.  
-- Reevaluate low-performing vendors and reassess assortment relevance or pricing structure.  
-- Promote historically strong GP brands to maximize margin contribution.
-
-
-### **3. Profit Margin Distribution**
-
-**Insights**
-- Most vendors operate within a healthy positive margin range (0–40%).  
-- High-margin vendors likely benefit from strong pricing, brand strength, or efficient supply structures.  
-- Extreme negative margins were identified but attributed to returns or adjustments rather than systemic issues.
-
-**Recommendations**
-- Expand support and visibility for high-margin vendors to grow profit contribution.  
-- Work with mid-margin vendors on negotiation, freight optimization, and pricing refinement.  
-- Flag extreme negative margin cases for Finance/Operations validation and upstream correction.
-
-### **4. Stock Turnover by Vendor**
-
-**Insights**
-- Most vendors have a stock turnover between 0.8–2.0, indicating normal inventory movement.
-- A few vendors show extremely high turnover (e.g., FLAVOR ESSENCE INC ~59), likely due to fast-moving products or low starting inventory.
-- Some vendors have zero or near-zero turnover, which may indicate slow-moving stock or inactive SKUs.
-
-**Recommendations**
-- Monitor vendors with very high turnover to ensure supply meets demand and avoid stockouts.
-- Investigate vendors with low or zero turnover to optimize inventory or phase out inactive products.
-- Adjust purchase planning and warehouse allocation based on turnover trends.
-
-
-### **5. Unit Cost vs. Purchase Quantity**
-
-**Insights**
-- Unit costs vary widely, with some very high-cost purchases and many lower-cost bulk purchases.
-- Extremely high or low unit costs may indicate small sample purchases, special SKUs, or pricing anomalies.
-
-**Recommendations**
-- Review outlier unit costs to confirm data accuracy and check for unusual pricing.
-- Negotiate pricing or bundle options for high-cost low-volume purchases.
-- Use unit cost insights to inform inventory and vendor negotiations.
-
-
-### **6. Sales-to-Purchase Ratio**
-
-**Insights**
-- Most vendors sell 1–3 times their purchase quantity, indicating typical resale rates.
-- Some vendors have very high ratios (e.g., FLAVOR ESSENCE INC ~86), showing high efficiency or rapid turnover.
-- A few vendors have ratios near zero, indicating stock may not be selling or purchases were not converted into sales.
-
-**Recommendations**
-- Support high-performing vendors to scale up successful SKUs.
-- Review low-performing vendors to identify underperforming products or adjust purchasing strategy.
-- Track sales-to-purchase trends for vendor performance benchmarking.
-
-
-### **7. Gross Profit Variability – Top 15 Vendors**
-
-**Insights**
-- Top vendors generate the majority of total sales, but gross profit varies significantly across brands/products.
-- Some vendors occasionally have very high or very low profits, reflecting inconsistent performance.
-- Consistently high-GP vendors provide reliable contribution to overall profitability.
-
-**Recommendations**
-- Focus on stabilizing supply, pricing, and promotions for vendors with high variability.
-- Prioritize long-term partnerships with consistently high-GP vendors.
-- Investigate occasional extreme losses for certain brands/products to prevent repeated impact on gross profit.
-
-</details>
+- Bulk Purchasing ≠ Guaranteed Savings: Weak correlation between purchase quantity and unit cost; volume discounts exist, but only for select vendors/products.
+- High Sales → High Profit: Vendors with high total sales consistently generate high gross profit (r = 0.99); revenue can be used as a reliable proxy for vendor profitability.
+- Underperforming Brands Identified: 2 brands flagged for low profit despite moderate sales; candidates for promotions, pricing adjustments, or vendor renegotiation.
+- SKU Segmentation: Majority of SKUs are low-turnover/high-profit; only ~13% are true star products (high turnover/high profit).
+- Stock Turnover Insights: Most vendors have normal turnover; extremes indicate fast-moving products or inactive SKUs requiring inventory attention.
+- Sales-to-Purchase Ratio: High-performing vendors efficiently convert purchases to sales; low ratios highlight underperforming inventory or purchasing issues.
+- Profit Variability in Top Vendors: Some top vendors show inconsistent gross profits across products, highlighting areas for pricing, supply, or promotional optimization.
 
 ---
 
