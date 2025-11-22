@@ -579,7 +579,7 @@ Test #4 provides a **clear performance segmentation** of SKUs. It highlights whi
 
 ---
 
-## Tools & Techniques
+## Tools & Techniques 
 | **Category** | **Used For** |
 |---------------|--------------|
 | AIMS Grid | Defining Project Purpose, Stakeholders, End Result, Success Critera|
