@@ -5,6 +5,10 @@ End-to-end **Vendor Performance Analysis** project using **SQL** (data explorati
 ## Key Highlights
 - Built a complete **end-to-end data analytics pipeline**: connected and queried PostgreSQL tables – cleaned, aggregated, and analyzed data in Python – visualized and modeled insights in Power BI for actionable business decisions.
 - Aggregated massive datasets **(millions of rows)** from `vendor_invoice`, `purchases`, and `sales` table **(12.8+ million rows)** into a single **`vendor_sales_summary`** table of **10,692 rows** using **CTEs (Common Table Expressions)** to pre-aggregate freight, purchase, and sales metrics per vendor-brand, enabling faster, actionable analysis.
+- Performed EDA & Analytical Testing → bulk buys ≈ small cost benefit, high-sales vendors = high profit, identified underperforming brands for action, and segmented SKUs to reveal star vs slow-moving products for strategic inventory decisions.
+- Bulk Buying ≠ Guaranteed Savings: Bulk purchases show weak cost benefits; discounts depend on vendor/product.
+- Sales Drive Profit: Vendors with high sales almost always generate high gross profit — revenue is a reliable profitability proxy.
+- Targeted SKU & Brand Actions: Identified underperforming brands and segmented SKUs (High/Low Turnover × High/Low Profit) to prioritize inventory, promotions, and strategic vendor decisions.
 - Applied structured **project planning frameworks**: **SMART** goals for objectives and **CRISP-DM** methodology for step-by-step data analysis, from business understanding → data preparation → modeling → evaluation → deployment.  
 - Designed an **interactive Vendor Performance Dashboard** to track cost, margin, sales, and operational efficiency.  
 - Identified **underperforming vendors & brands** and uncovered **profitability gaps** across suppliers, enabling targeted interventions.  
