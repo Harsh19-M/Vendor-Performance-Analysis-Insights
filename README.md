@@ -568,7 +568,9 @@ Test #4 provides a **clear performance segmentation** of SKUs. It highlights whi
 
 ---
 
-## Business Impact| **Metric**                | **Before**                                                        | **After**                                                                             |
+## Business Impact
+
+| **Metric**                | **Before**                                                        | **After**                                                                             |
 | ------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | Data Quality              | Fragmented, inconsistent, and unvalidated                         | Cleaned, standardized, and enriched dataset in `vendor_sales_summary_clean_addedcols` |
 | Reporting Process         | Manual table joins, Excel summaries                               | Automated PostgreSQL → Python → Power BI workflow with dashboards                     |
