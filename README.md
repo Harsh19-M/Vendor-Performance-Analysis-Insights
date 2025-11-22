@@ -560,13 +560,13 @@ Test #4 provides a **clear performance segmentation** of SKUs. It highlights whi
 ## Key Insights
 
 ### **Key Insights & Findings:**
-- Bulk Purchasing ≠ Guaranteed Savings: Weak correlation between purchase quantity and unit cost; volume discounts exist, but only for select vendors/products.
-- High Sales → High Profit: Vendors with high total sales consistently generate high gross profit (r = 0.99); revenue can be used as a reliable proxy for vendor profitability.
-- Underperforming Brands Identified: 2 brands flagged for low profit despite moderate sales; candidates for promotions, pricing adjustments, or vendor renegotiation.
-- SKU Segmentation: Majority of SKUs are low-turnover/high-profit; only ~13% are true star products (high turnover/high profit).
-- Stock Turnover Insights: Most vendors have normal turnover; extremes indicate fast-moving products or inactive SKUs requiring inventory attention.
-- Sales-to-Purchase Ratio: High-performing vendors efficiently convert purchases to sales; low ratios highlight underperforming inventory or purchasing issues.
-- Profit Variability in Top Vendors: Some top vendors show inconsistent gross profits across products, highlighting areas for pricing, supply, or promotional optimization.
+- **Bulk Purchasing ≠ Guaranteed Savings:** Weak correlation between purchase quantity and unit cost; volume discounts exist, but only for select vendors/products.
+- **High Sales → High Profit:** Vendors with high total sales consistently generate high gross profit (r = 0.99); revenue can be used as a reliable proxy for vendor profitability.
+- **Underperforming Brands Identified:** 2 brands flagged for low profit despite moderate sales; candidates for promotions, pricing adjustments, or vendor renegotiation.
+- **SKU Segmentation:** Majority of SKUs are low-turnover/high-profit; only ~13% are true star products (high turnover/high profit).
+- **Stock Turnover Insights:** Most vendors have normal turnover; extremes indicate fast-moving products or inactive SKUs requiring inventory attention.
+- **Sales-to-Purchase Ratio:** High-performing vendors efficiently convert purchases to sales; low ratios highlight underperforming inventory or purchasing issues.
+- **Profit Variability in Top Vendors:** Some top vendors show inconsistent gross profits across products, highlighting areas for pricing, supply, or promotional optimization.
 
 ---
 
