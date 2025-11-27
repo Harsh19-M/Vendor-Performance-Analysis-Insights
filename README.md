@@ -6,11 +6,9 @@ End-to-end **Vendor Performance Analysis** project using **SQL** (data explorati
 - Built a complete **end-to-end data analytics pipeline**: connected and queried PostgreSQL tables, aggregating millions of rows into a 10,692-row summary table using CTEs; performed initial exploration, data cleaning, 7-step EDA, and 4 targeted business tests in Python based on the problem statement and key challenges; and visualized and modeled insights in Power BI, creating 3 dashboard pages, each addressing a specific key challenge to enable actionable business decisions.
 - Aggregated massive datasets **(millions of rows)** from `vendor_invoice`, `purchases`, and `sales` table **(12.8+ million rows)** into a single **`vendor_sales_summary`** table of **10,692 rows** using **CTEs (Common Table Expressions)** to pre-aggregate freight, purchase, and sales metrics per vendor-brand, enabling faster, actionable analysis.
 - Performed EDA & Analytical Testing → Bulk Buying ≠ Guaranteed Savings(weak Correlation), high-sales vendors = generate high profit, identified underperforming brands for action, and segmented SKUs(Stock keeping unit) to reveal star vs slow-moving products for strategic inventory decisions.
-- Applied structured **project planning frameworks**: **SMART** goals for objectives and **CRISP-DM** methodology for step-by-step data analysis, from business understanding → data preparation → modeling → evaluation → deployment.  
-- Designed an **interactive Vendor Performance Dashboard** to track cost, margin, sales, and operational efficiency.  
-- Identified **underperforming vendors & brands** and uncovered **profitability gaps** across suppliers, enabling targeted interventions.  
-- Delivered **data-backed recommendations** for pricing optimization, vendor negotiations, and inventory management.  
-
+- Applied structured **project planning frameworks**: **SMART** goals for objectives and **CRISP-DM** methodology for step-by-step data analysis, from business understanding → data preparation → modeling → evaluation → deployment.
+- Built an **interactive Vendor Performance Dashboard** that pinpointed **underperforming vendors/brands**, exposed **profitability gaps**.
+- Delivered **Data-driven recommendations** for pricing optimization, vendor negotiations, and inventory management.
 
 ## Tools & Skills
 **SQL(PostgreSQL)** | **Python(Cleaning, EDA, Research & Testing/Visulizations)** | **Power BI - Dashboard Tools & DAX** | **Data Modeling** | **ETL** | **Hypothesis Testing** | **Business Analysis** 
