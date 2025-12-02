@@ -610,6 +610,11 @@ Test #4 provides a **clear performance segmentation** of SKUs. It highlights whi
 
 ## Future Enhancements
 
+- **Time-Series & Forecasting Integration:** Incorporate daily/weekly vendor trends, seasonality analysis, and automated MoM/YTD forecasting to support proactive purchasing decisions.
+- **Advanced Statistical & Anomaly Analysis:** Add deeper statistical tests (ANOVA, variance checks) and automated detection for cost outliers, margin drops, and abnormal vendor behavior.
+- **Automated ETL Pipeline & Data Quality Framework:** Implement scheduled ETL pipelines (Airflow/Prefect) with nightly refreshes and data-quality checks for missing, inconsistent, or duplicated vendor data.
+- **Real-Time Alerts & Vendor Risk Monitoring:** Set thresholds for profitability, slow-moving inventory, and reliability scores to trigger automated alerts (email/Teams/Slack) when risks are detected.
+
 ---
 
 *Developed by Harsh Mishra*  
