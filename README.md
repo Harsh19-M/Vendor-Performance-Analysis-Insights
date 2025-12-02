@@ -425,6 +425,15 @@ Insight: Some high-sales vendors show large profit variability, highlighting pot
 
 
 ## **Analytical Testing**
+Performed **4 targeted analytical tests** to solve the project’s core challenges: vendor visibility, fragmented data, and unclear cost efficiency.  
+- **Test 1:** Assessed whether bulk purchasing actually lowers unit cost → revealed only weak cost benefits.  
+- **Test 2:** Measured Sales ↔ Profit correlation → confirmed a strong linear relationship for vendor evaluation.  
+- **Test 3:** Used Z-scores to identify underperforming brands → highlighted low-profit SKUs requiring intervention.  
+- **Test 4:** Segmented SKUs by turnover and profit → exposed operational inefficiencies and pinpointed high-value products.
+
+Together, these tests convert raw data into **clear, actionable insights** for smarter purchasing, vendor strategy, and inventory management.
+
+<details> <summary><b> 4 Key Analytical Tests (Click to Expand)</b></summary>
 
 ### **Test #1: Does Bulk Purchasing Reduce Unit Cost?**
 
@@ -552,6 +561,8 @@ Segment SKUs by **turnover and profit** to identify which products are driving r
 
 **Conclusion:**
 Test #4 provides a **clear performance segmentation** of SKUs. It highlights which products are key revenue drivers, which are slow movers, and which may be dragging down performance, enabling **data-driven inventory and vendor decisions**.
+
+</details>
 
 ---
 
