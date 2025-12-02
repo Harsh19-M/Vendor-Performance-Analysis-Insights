@@ -33,7 +33,7 @@ By leveraging historical **purchase, sales, and pricing** data, the company seek
 ---
 
 ## Business Problem
-The company struggles to identify **underperforming vendors**, optimize **inventory turnover**, and make **data-driven purchasing decisions**.  
+The struggle is to identify **underperforming vendors**, optimize **inventory turnover**, and make **data-driven purchasing decisions**.  
 This project aims to:  
 - Detect vendors or brands with declining sales or profit margins  
 - Understand the effect of **bulk purchasing** on cost efficiency  
