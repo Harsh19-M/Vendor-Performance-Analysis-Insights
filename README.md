@@ -77,6 +77,18 @@ This project aims to:
 
 ### **EDA/Research**
 
+- Conducted a full **vendor-level EDA** to understand revenue, profitability, pricing, and operational efficiency across 128 suppliers.  
+- Analyzed **total sales and gross profit** by vendor to identify top revenue contributors, high-margin partners, and loss-making suppliers that need review.  
+- Assessed **profit margins** to detect outliers, uncover pricing inconsistencies, and flag anomalous or error-prone entries for Finance/Operations validation.  
+- Evaluated **stock turnover** to highlight fast-moving vs slow-moving vendors and surface potential inventory bottlenecks or overstock risk.  
+- Reviewed **unit cost vs purchase quantity** to understand bulk-purchase efficiency and identify anomalous pricing behavior.  
+- Measured each vendor’s **sales-to-purchase ratio** to quantify operational conversion efficiency and identify both high-performing and underperforming suppliers.  
+- Analyzed **profit variability among top vendors** to expose volatility and highlight which major suppliers carry higher margin risk.  
+
+The EDA builds a **complete vendor intelligence foundation**, revealing revenue drivers, margin health, operational performance, and pricing patterns — setting the stage for deeper testing and the final BI dashboard.
+
+<details> <summary><b> 7 Key EDAs Performed in Python (Click to Expand)</b></summary>
+
 ### **1. Total Sales by Vendor**
 
 #### **Brief Explanation**
@@ -423,6 +435,7 @@ Insight: Some high-sales vendors show large profit variability, highlighting pot
 (Full boxplot visually shows variability across all top 15 vendors)
 </details>
 
+</details> 
 
 ## **Analytical Testing**
 Performed **4 targeted analytical tests** to solve the project’s core challenges: vendor visibility, fragmented data, and unclear cost efficiency.  
