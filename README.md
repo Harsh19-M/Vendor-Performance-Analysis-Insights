@@ -29,7 +29,7 @@ This project uses a mock/tutorial dataset designed to simulate realistic vendor 
 ---
 
 ## Business Context
-A retail/wholesale company aims to **enhance profitability and operational efficiency** through better vendor and inventory management.  
+A retail/wholesale company aims to **enhance profitability and operational efficiency** through better vendor and inventory management.   
 By leveraging historical **purchase, sales, and pricing** data, the company seeks to uncover cost inefficiencies and vendor performance gaps impacting profitability.
  
 ---
