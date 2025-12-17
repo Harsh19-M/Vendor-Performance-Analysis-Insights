@@ -121,7 +121,7 @@ plt.show()
 - **Max vendor sales: $68.7M (DIAGEO NORTH AMERICA INC)**
 
 **Top Vendors by Total Sales ($):**
-- **DIAGEO NORTH AMERICA INC — $68.7M**  
+- **DIAGEO NORTH AMERICA INC — $68.7M**   
 - **MARTIGNETTI COMPANIES — $41.0M**  
 - **PERNOD RICARD USA — $32.3M**  
 - **JIM BEAM BRANDS COMPANY — $31.9M**  
