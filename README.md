@@ -76,7 +76,7 @@ This project aims to:
 - **Verified data quality**: ensured no duplicates, checked for negative values, and reviewed descriptive statistics (`df.describe().T`).  
 - **Loaded cleaned table back to PostgreSQL**: created `vendor_sales_summary_clean_addedcols` and stored using `df.to_sql(..., if_exists='replace', index=False)` for downstream EDA, visualization, and dashboarding.
 
-### **Initial Exploration (EDA) in Python**
+### **Exploration (EDA) in Python**
 
 - Conducted a full **vendor-level EDA** to understand revenue, profitability, pricing, and operational efficiency across 128 suppliers.  
 - Analyzed **total sales and gross profit** by vendor to identify top revenue contributors, high-margin partners, and loss-making suppliers that need review.  
