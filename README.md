@@ -86,7 +86,7 @@ This project aims to:
 - Measured each vendor’s **sales-to-purchase ratio** to quantify operational conversion efficiency and identify both high-performing and underperforming suppliers.  
 - Analyzed **profit variability among top vendors** to expose volatility and highlight which major suppliers carry higher margin risk.  
 
-The EDA builds a **complete vendor intelligence foundation**, revealing revenue drivers, margin health, operational performance, and pricing patterns — setting the stage for deeper testing and the final BI dashboard.
+The EDA builds a **complete vendor intelligence foundation**, revealing revenue drivers, margin health, operational performance, and pricing patterns — setting the stage for deeper testing and the final BI dashboard. 
 
 <details> <summary><b> 7 Key EDAs Performed in Python (Click to Expand)</b></summary>
 
