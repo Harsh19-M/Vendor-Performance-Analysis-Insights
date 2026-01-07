@@ -602,7 +602,7 @@ Test #4 provides a **clear performance segmentation** of SKUs. It highlights whi
 | Inventory Optimization    | Blind spots in turnover & SKU performance                         | Identified star SKUs, slow movers, and underperforming brands for strategic action    |
 | Cost Efficiency           | Bulk purchase impact unclear                                      | Verified bulk purchase effect, unit cost trends, and profitability gaps               |
 
----
+--- 
 
 ## Tools & Techniques 
 | **Category**                              | **Used For**                                                                   |
