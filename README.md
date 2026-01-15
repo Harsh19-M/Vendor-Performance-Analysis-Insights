@@ -16,8 +16,23 @@ End-to-end **Vendor Performance Analysis** project using **SQL** (data explorati
  
 
 
-**Live Dashboard:** [View Power BI Report](your-link-here)  
 **Executive Deck:** [View Google Slides](https://docs.google.com/presentation/d/1h2wTZSiAYNN2xwqsaU1r2wTdwOEzAcLZYS8ufUnIp0g/present?slide=id.g3a024b19907_2_96)  
+**Dashboard:** I was unable to publish the Power BI report online due to lack of a work email. Can open/launch it and view in person.
+
+<details>
+  <summary><b>3 Pages of Dashboard Screenshots (Click to Expand)</b></summary>
+
+  **Page 1:**  
+  ![Top & UnderPerformers - Page 1](![Vendor Performance Dashboard Page 1](https://github.com/user-attachments/assets/9d9e141c-eba6-4d1e-b3c8-afb7f40501ba))
+
+  **Page 2:**  
+  ![Inventory Efficiency & Bulk Purchase Analysis - Page 2]![Vendor Performance Dashboard Page 2](https://github.com/user-attachments/assets/7d075736-f56b-4c82-bc64-f174e9a85f77))
+
+  **Page 3:**  
+  ![Vendor Profitability & Risk Analysis - Page 3](![Vendor Performance Dashboard Page 3](https://github.com/user-attachments/assets/a85ddfde-1005-4063-bf9c-59ad72a1cc2e))
+
+</details>
+
 **Full Case Study Below ↓**
 
 
