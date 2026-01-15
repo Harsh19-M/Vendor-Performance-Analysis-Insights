@@ -16,7 +16,7 @@ End-to-end **Vendor Performance Analysis** project using **SQL** (data explorati
  
 
 
-**Executive Deck:** [View Google Slides](https://docs.google.com/presentation/d/1h2wTZSiAYNN2xwqsaU1r2wTdwOEzAcLZYS8ufUnIp0g/present?slide=id.g3a024b19907_2_96)  
+**Executive Deck:** [View Presentation Slides](https://docs.google.com/presentation/d/1h2wTZSiAYNN2xwqsaU1r2wTdwOEzAcLZYS8ufUnIp0g/present?slide=id.g3a024b19907_2_96)  
 **Dashboard:** Unable to publish the Power BI report online due to the lack of a work email. The dashboard can be opened and reviewed in person.
 
 <details>
