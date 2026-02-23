@@ -14,7 +14,7 @@ End-to-end **Vendor Performance Analysis** project using **SQL** (data explorati
 ## Tools & Skills
 **SQL(PostgreSQL)** | **Python(Cleaning, EDA, Research & Testing/Visulizations)** | **Power BI - Dashboard Tools & DAX** | **Data Modeling** | **ETL** | **Hypothesis Testing** | **Business Analysis** 
  
-**Dashboards:** https://drive.google.com/file/d/1pZv8bHNfRPOJL2hiMTm-CN4Lc9bEUQaA/preview
+**Dashboards:** [View Dashboard Reports](https://drive.google.com/file/d/1pZv8bHNfRPOJL2hiMTm-CN4Lc9bEUQaA/preview)
  
 **Full Case Study Below ↓**
 
