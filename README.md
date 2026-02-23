@@ -18,7 +18,6 @@ End-to-end **Vendor Performance Analysis** project using **SQL** (data explorati
  
 **Full Case Study Below ↓**
 
----
 
 
 # Vendor Performance Analysis (Approach & Findings)
