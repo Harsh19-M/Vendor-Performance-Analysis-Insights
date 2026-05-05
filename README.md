@@ -21,7 +21,7 @@ End-to-end **Vendor Performance Analysis** project using **SQL** for data explor
 
 
 # Vendor Performance Analysis (Approach & Findings)
-**A Comprehensive Data Analytics Project analyzing vendor performance, inventory efficiency, and cost drivers using PostgreSQL, Python, and Power BI, uncovering actionable insights to optimize procurement, pricing, and operational decisions.**
+A Comprehensive Data Analytics Project analyzing vendor performance, inventory efficiency, and cost drivers using PostgreSQL, Python, and Power BI, uncovering actionable insights to optimize procurement, pricing, and operational decisions.
 
 ---
 
